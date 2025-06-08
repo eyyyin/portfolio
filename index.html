@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Arina Manasikana Putri</title>
+    <!-- Memuat Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Konfigurasi Tailwind untuk font Inter -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* bg-slate-900 */
+            color: #e2e8f0; /* text-slate-200 */
+        }
+        /* Penyesuaian untuk scroll-smooth */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-inter">
+    <!-- Bagian Atas (Hero Section) -->
+    <header class="relative min-h-screen flex items-center justify-center p-8 text-center bg-gradient-to-br from-indigo-900 to-slate-900 overflow-hidden">
+        <!-- Latar belakang abstrak -->
+        <div class="absolute inset-0 z-0 opacity-20">
+            <svg class="absolute inset-0 h-full w-full stroke-indigo-400 stroke-[0.5] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+                <defs>
+                    <pattern id="dot-grid" width="20" height="20" x="50%" y="50%" patternUnits="userSpaceOnUse">
+                        <path d="M0 0h.01V0H0Z" class="stroke-indigo-400" stroke-width="0.5"></path>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" stroke-width="0" fill="url(#dot-grid)"></rect>
+            </svg>
+        </div>
+
+        <div class="z-10 max-w-4xl mx-auto">
+            <!-- Foto profil Anda. Catatan: Untuk hosting eksternal, ganti 'uploaded:DSC03969.jpg-0a488917-8fa5-49b7-bfb0-b2578e915392' dengan URL publik foto Anda. -->
+            <img src="https://github.com/eyyyin/portfolio/blob/main/DSC03969.jpg" alt="Foto Profil Arina" class="mx-auto mb-6 rounded-full ring-4 ring-indigo-500 shadow-xl w-40 h-40 object-cover">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
+                Arina Manasikana Putri
+            </h1>
+            <p class="text-xl sm:text-2xl text-indigo-200 mb-6 italic">
+                Media Intelligence Enthusiast
+            </p>
+            <p class="text-lg sm:text-xl text-indigo-100 max-w-2xl mx-auto mb-8">
+                Membentuk Wawasan dari Data, Menciptakan Narasi yang Memikat.
+            </p>
+            <a href="#projects" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75">
+                Lihat Proyek Saya
+            </a>
+        </div>
+    </header>
+
+    <!-- Bagian Keahlian Inti -->
+    <section id="skills" class="py-16 px-4 sm:px-8 bg-slate-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-white mb-12">Keahlian Inti</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Kategori Data Analytics -->
+                <div class="bg-slate-700 p-6 rounded-xl shadow-lg border border-slate-600 transition duration-300 hover:scale-105">
+                    <h3 class="text-2xl font-semibold text-indigo-300 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v14c0 1.105-.9 2-2 2H9zm0 0l-5 5H3c-1.105 0-2-.9-2-2v-3l5-5m-5 5v-3"></path></svg>
+                        Analisis Data
+                    </h3>
+                    <ul class="list-disc list-inside text-slate-300 space-y-2">
+                        <li>Analisis Statistik</li>
+                        <li>Pemrosesan Data</li>
+                        <li>Visualisasi Data</li>
+                        <li>Interpretasi Wawasan</li>
+                        <li>Penambangan Data</li>
+                    </ul>
+                </div>
+
+                <!-- Kategori Tools & Teknologi -->
+                <div class="bg-slate-700 p-6 rounded-xl shadow-lg border border-slate-600 transition duration-300 hover:scale-105">
+                    <h3 class="text-2xl font-semibold text-indigo-300 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.504-.606 1.056-.995 1.622-.995h.076c.677 0 1.254.407 1.579 1.033l.5 1.006a1.181 1.181 0 001.298 0l.5-1.006c.325-.626.902-1.033 1.579-1.033H19.5c1.1 0 2 .9 2 2v2.586c0 .53-.213 1.035-.586 1.408l-7.778 7.778a2 2 0 01-2.828 0l-7.778-7.778A2 2 0 012 10.586V8c0-1.1.9-2 2-2h2.586c.53 0 1.035.213 1.408.586l7.778 7.778z"></path></svg>
+                        Alat & Teknologi
+                    </h3>
+                    <ul class="list-disc list-inside text-slate-300 space-y-2">
+                        <li>Python</li>
+                        <li>Pandas</li>
+                        <li>Plotly</li>
+                        <li>Streamlit</li>
+                        <li>Terminal</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+
+                <!-- Kategori Soft Skills -->
+                <div class="bg-slate-700 p-6 rounded-xl shadow-lg border border-slate-600 transition duration-300 hover:scale-105">
+                    <h3 class="text-2xl font-semibold text-indigo-300 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                        Keterampilan Lunak
+                    </h3>
+                    <ul class="list-disc list-inside text-slate-300 space-y-2">
+                        <li>Komunikasi Efektif</li>
+                        <li>Pemikiran Kritis</li>
+                        <li>Penyelesaian Masalah</li>
+                        <li>Kerja Sama Tim</li>
+                        <li>Adaptabilitas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Proyek Unggulan -->
+    <section id="projects" class="py-16 px-4 sm:px-8 bg-slate-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-white mb-12">Proyek Unggulan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+                <!-- Proyek 1: Advanced Media Monitoring dengan Google Alerts -->
+                <div class="bg-slate-800 rounded-xl shadow-lg overflow-hidden border border-slate-700 transition duration-300 hover:shadow-xl hover:border-indigo-500">
+                    <img src="https://placehold.co/700x400/1e293b/cbd5e1?text=Media+Monitoring" alt="Screenshot Proyek 1" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-indigo-300 mb-3">Advanced Media Monitoring dengan Google Alerts</h3>
+                        <p class="text-slate-300 mb-4">
+                            Membangun sistem pemantauan media otomatis menggunakan Google Alerts untuk melacak sebutan merek dan topik terkait.
+                        </p>
+                        <div class="mb-4">
+                            <span class="font-medium text-slate-400">Alat:</span> <span class="text-slate-200">Google Alerts, Spreadsheet (Google Sheets/Excel)</span>
+                        </div>
+                        <div class="mb-5">
+                            <span class="font-medium text-slate-400">Dampak:</span> <span class="text-slate-200">Memungkinkan pelacakan reputasi real-time dan identifikasi peluang/ancaman, mengurangi waktu pemantauan manual sebesar 70%.</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="#!" class="inline-flex items-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-5 rounded-full shadow-md transition duration-300 hover:scale-105">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4-4m0 0l-4-4m4 4H7a4 4 0 000 8h.01"></path></svg>
+                                Demo Live
+                            </a>
+                            <a href="#!" class="inline-flex items-center bg-slate-700 hover:bg-slate-600 text-white font-bold py-2 px-5 rounded-full shadow-md transition duration-300 hover:scale-105">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.417 2.865 8.169 6.839 9.48.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.089 2.91.832.092-.647.35-1.089.636-1.338-2.22-.253-4.555-1.11-4.555-4.942 0-1.09.39-1.984 1.029-2.685-.103-.253-.446-1.272.097-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0110 4.844c.85.004 1.7.11 2.504.329 1.909-1.296 2.747-1.025 2.747-1.025.546 1.378.202 2.398.099 2.65.64.701 1.029 1.595 1.029 2.685 0 3.843-2.339 4.689-4.566 4.935.359.308.678.919.678 1.852 0 1.335-.012 2.41-.012 2.727 0 .267.18.579.688.483C17.135 18.183 20 14.437 20 10.017 20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path></svg>
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 2: Pemanfaatan Google Trends untuk Strategi Pembuatan Konten -->
+                <div class="bg-slate-800 rounded-xl shadow-lg overflow-hidden border border-slate-700 transition duration-300 hover:shadow-xl hover:border-indigo-500">
+                    <img src="https://placehold.co/700x400/1e293b/cbd5e1?text=Google+Trends" alt="Screenshot Proyek 2" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-indigo-300 mb-3">Pemanfaatan Google Trends untuk Strategi Pembuatan Konten</h3>
+                        <p class="text-slate-300 mb-4">
+                            Menganalisis data Google Trends untuk mengidentifikasi topik yang sedang tren dan relevan, mendukung strategi konten.
+                        </p>
+                        <div class="mb-4">
+                            <span class="font-medium text-slate-400">Alat:</span> <span class="text-slate-200">Google Trends, Spreadsheet (Google Sheets/Excel)</span>
+                        </div>
+                        <div class="mb-5">
+                            <span class="font-medium text-slate-400">Dampak:</span> <span class="text-slate-200">Meningkatkan relevansi konten dan engagement audiens, menghasilkan peningkatan trafik sebesar 25%.</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="#!" class="inline-flex items-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-5 rounded-full shadow-md transition duration-300 hover:scale-105">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4-4m0 0l-4-4m4 4H7a4 4 0 000 8h.01"></path></svg>
+                                Demo Live
+                            </a>
+                            <a href="#!" class="inline-flex items-center bg-slate-700 hover:bg-slate-600 text-white font-bold py-2 px-5 rounded-full shadow-md transition duration-300 hover:scale-105">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.417 2.865 8.169 6.839 9.48.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.089 2.91.832.092-.647.35-1.089.636-1.338-2.22-.253-4.555-1.11-4.555-4.942 0-1.09.39-1.984 1.029-2.685-.103-.253-.446-1.272.097-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0110 4.844c.85.004 1.7.11 2.504.329 1.909-1.296 2.747-1.025 2.747-1.025.546 1.378.202 2.398.099 2.65.64.701 1.029 1.595 1.029 2.685 0 3.843-2.339 4.689-4.566 4.935.359.308.678.919.678 1.852 0 1.335-.012 2.41-.012 2.727 0 .267.18.579.688.483C17.135 18.183 20 14.437 20 10.017 20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path></svg>
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 3: Analisis Google Trends dan AI untuk Media Intelligence -->
+                <div class="bg-slate-800 rounded-xl shadow-lg overflow-hidden border border-slate-700 transition duration-300 hover:shadow-xl hover:border-indigo-500">
+                    <img src="https://placehold.co/700x400/1e293b/cbd5e1?text=Google+Trends+AI" alt="Screenshot Proyek 3" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-indigo-300 mb-3">Analisis Google Trends dan AI untuk Media Intelligence</h3>
+                        <p class="text-slate-300 mb-4">
+                            Mengintegrasikan data Google Trends dengan teknik AI untuk analisis media yang lebih mendalam dan prediksi tren.
+                        </p>
+                        <div class="mb-4">
+                            <span class="font-medium text-slate-400">Alat:</span> <span class="text-slate-200">Google Trends, Python (Machine Learning Libraries), AI Frameworks</span>
+                        </div>
+                        <div class="mb-5">
+                            <span class="font-medium text-slate-400">Dampak:</span> <span class="text-slate-200">Menyediakan wawasan prediktif dan komprehensif untuk strategi media, meningkatkan efisiensi analisis sebesar 40%.</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="#!" class="inline-flex items-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-5 rounded-full shadow-md transition duration-300 hover:scale-105">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4-4m0 0l-4-4m4 4H7a4 4 0 000 8h.01"></path></svg>
+                                Demo Live
+                            </a>
+                            <a href="#!" class="inline-flex items-center bg-slate-700 hover:bg-slate-600 text-white font-bold py-2 px-5 rounded-full shadow-md transition duration-300 hover:scale-105">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.417 2.865 8.169 6.839 9.48.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.089 2.91.832.092-.647.35-1.089.636-1.338-2.22-.253-4.555-1.11-4.555-4.942 0-1.09.39-1.984 1.029-2.685-.103-.253-.446-1.272.097-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0110 4.844c.85.004 1.7.11 2.504.329 1.909-1.296 2.747-1.025 2.747-1.025.546 1.378.202 2.398.099 2.65.64.701 1.029 1.595 1.029 2.685 0 3.843-2.339 4.689-4.566 4.935.359.308.678.919.678 1.852 0 1.335-.012 2.41-.012 2.727 0 .267.18.579.688.483C17.135 18.183 20 14.437 20 10.017 20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path></svg>
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Hubungi Saya -->
+    <section id="contact" class="py-16 px-4 sm:px-8 bg-slate-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-8">Hubungi Saya</h2>
+            <p class="text-lg text-slate-300 mb-8">
+                Tertarik untuk berkolaborasi atau sekadar menyapa? Jangan ragu untuk menghubungi saya!
+            </p>
+            <div class="flex flex-col items-center gap-6">
+                <a href="mailto:arina.manasikanaputri@gmail.com" class="flex items-center text-indigo-300 hover:text-indigo-400 text-lg sm:text-xl font-medium transition duration-300">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                    arina.manasikanaputri@gmail.com
+                </a>
+                <p class="flex items-center text-indigo-300 text-lg sm:text-xl font-medium">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM7.5 9A1.5 1.5 0 006 10.5v1A1.5 1.5 0 007.5 13h1A1.5 1.5 0 0010 11.5v-1A1.5 1.5 0 008.5 9h-1zM12.5 9A1.5 1.5 0 0011 10.5v1A1.5 1.5 0 0012.5 13h1A1.5 1.5 0 0015 11.5v-1A1.5 1.5 0 0013.5 9h-1z" clip-rule="evenodd"></path></svg>
+                    085959558604
+                </p>
+                <a href="https://www.linkedin.com/in/arina-manasikana-putri-placeholder" target="_blank" rel="noopener noreferrer" class="flex items-center text-indigo-300 hover:text-indigo-400 text-lg sm:text-xl font-medium transition duration-300">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014V8.16h2.16l.092 1.57h.03c.29-.58 1.054-1.162 2.18-1.162 2.348 0 2.784 1.543 2.784 3.567v4.653zM6.575 6.452c-.922 0-1.666-.744-1.666-1.666 0-.923.744-1.667 1.666-1.667.923 0 1.667.744 1.667 1.667 0 .922-.744 1.666-1.667 1.666zM2.887 8.16H5.55V16.338H2.887V8.16zM18 0H2C.897 0 0 .897 0 2v16c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V2c0-1.103-.897-2-2-2z" clip-rule="evenodd"></path></svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/arina-manasikana-putri-placeholder" target="_blank" rel="noopener noreferrer" class="flex items-center text-indigo-300 hover:text-indigo-400 text-lg sm:text-xl font-medium transition duration-300">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.417 2.865 8.169 6.839 9.48.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.089 2.91.832.092-.647.35-1.089.636-1.338-2.22-.253-4.555-1.11-4.555-4.942 0-1.09.39-1.984 1.029-2.685-.103-.253-.446-1.272.097-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0110 4.844c.85.004 1.7.11 2.504.329 1.909-1.296 2.747-1.025 2.747-1.025.546 1.378.202 2.398.099 2.65.64.701 1.029 1.595 1.029 2.685 0 3.843-2.339 4.689-4.566 4.935.359.308.678.919.678 1.852 0 1.335-.012 2.41-.012 2.727 0 .267.18.579.688.483C17.135 18.183 20 14.437 20 10.017 20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path></svg>
+                                GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-900 border-t border-slate-700 text-center text-slate-400 text-sm">
+        <p>&copy; 2025 Arina Manasikana Putri. Semua hak dilindungi undang-undang.</p>
+    </footer>
+</body>
+</html>
